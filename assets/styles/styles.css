@@ -1,6 +1,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  --color-accent: #5dadd3
+  --color-accent: #5dadd3;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -18,7 +19,7 @@ h2 {
   color: #000000;
   font-weight: 700;
   text-align: center;
-  margin-top: 4rem;
+  padding-top: 4rem;
 }
 
 h2~.separator {
@@ -63,6 +64,12 @@ a.button {
 
 a.button:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0 3.75rem;
+  }
 }
 
 /*----HEADER----*/
@@ -173,6 +180,12 @@ header nav a {
 .content.slider {
   color: #767676;
 }
+
+.content.slider .title-wrapper {
+  max-width: 2100px;
+  margin: 0 auto;
+}
+
 .content.slider .title {
   display:flex;
   gap: 60px;
@@ -199,9 +212,84 @@ header nav a {
   min-width: 113px;
   align-self: flex-end;
 }
+
 .content.slider img {
   width: 100%;
   height: auto;
+}
+
+.content.slider .slider-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  .content.slider {
+    position: relative;
+  }
+
+
+  .content.slider .slider-mobile {
+    display: none;
+  }
+
+  .content.slider .slider-desktop {
+    display: block;
+    position: relative;
+    height: fit-content;
+    width: calc(100% + 2 * 3.75rem);
+    margin-left: -3.75rem;
+  }
+
+  .content.slider .slider-desktop .slide-btn {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content.slider .slider-desktop .slide-btn img {
+    height: 96px;
+    width: auto;
+  }
+
+  .content.slider .slider-desktop .slide-btn.btn-left {
+    left: 0;
+  }
+
+  .content.slider .slider-desktop .slide-btn.btn-right {
+    right: 0;
+  }
+
+  .content.slider .slider-desktop .slide-bar {
+    display: flex;
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .content.slider .title {
+    height: 100%;
+    max-width: 347px;
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+  }
+
+  .content.slider .title .info {
+    align-self: flex-start;
+  }
 }
 
 /*----SERVICES----*/
@@ -243,6 +331,8 @@ header nav a {
   .content.services .flex-wrapper {
     display: flex;
     max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
   }
 
@@ -491,6 +581,18 @@ header nav a {
     max-width: 379px;
     margin-left: auto; 
     margin-right: 0;
+  }
+
+  .content.contact .google-map {
+    width: calc(100% + 7.5rem);
+    margin-left: -3.75rem;
+    margin-right: -3.75rem;
+  }
+  
+  .content.contact:before {
+    width: calc(100% + 7.5rem);
+    margin-left: -3.75rem;
+    margin-right: -3.75rem;
   }
 }
 

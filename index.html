@@ -38,17 +38,46 @@
 
     <main>
         <section class="content slider">
-            <div class="title">
-                <div>
-                    <h1><span class="color">Webagency : </span>L'Agence de tous vos projets !</h1>
-                    <p class="subtitle">Vous avez un projet web ? La WebAgency  vous 
-                        aide à le réaliser</p>
-                </div>
-                <div class="info">
-                    <a href="#" class="button">Plus d'infos</a>
+            <div class="title-wrapper">
+                <div class="title">
+                    <div>
+                        <h1><span class="color">Webagency : </span>L'Agence de tous vos projets !</h1>
+                        <p class="subtitle">Vous avez un projet web ? La WebAgency  vous 
+                            aide à le réaliser</p>
+                    </div>
+                    <div class="info">
+                        <a href="#" class="button">Plus d'infos</a>
+                    </div>
                 </div>
             </div>
-            <img src="assets/img/slider/slide-1-small.jpg" alt="">
+            <div class="slider-mobile">
+                <img 
+                    srcset="assets/img/slider/slide-1-small.jpg 513w, assets/img/slider/slide-1-medium.jpg 768w"
+                    src="assets/img/slider/slide-1-medium.jpg" alt="accueil"
+                >
+            </div>
+            <div class="slider-desktop">
+                <img 
+                    class="slide-item"
+                    srcset="assets/img/slider/slide-1-small.jpg 513w, assets/img/slider/slide-1-medium.jpg 768w, assets/img/slider/slide-1-large.jpg 2560w"
+                    src="assets/img/slider/slide-1-large.jpg" alt="accueil"
+                >
+                <img 
+                    class="slide-item"
+                    srcset="assets/img/slider/slide-2-small.jpg 513w, assets/img/slider/slide-2-medium.jpg 768w, assets/img/slider/slide-2-large.jpg 2560w"
+                    src="assets/img/slider/slide-2-large.jpg" alt="accueil"
+                >
+              
+                <div class="slide-btn btn-left" onclick="plusDivs(-1)">
+                    <img src="assets/img/chevron-left.svg" alt="">
+                </div>
+                <div class="slide-btn btn-right" onclick="plusDivs(1)">
+                    <img src="assets/img/chevron-right.svg" alt="">
+                </div>
+
+                <div id="slide-bar" class="slide-bar"></div>
+
+            </div>
         </section>
 
         <section class="content services" id="services">

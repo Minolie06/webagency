@@ -1,4 +1,0 @@
-slider + responsive
-smooth scroll
-
-
