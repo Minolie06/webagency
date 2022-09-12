@@ -328,28 +328,31 @@ header .logo {
 }
 
 .content.contact .contact-form-wrapper {
-  margin: 2rem 1rem;
-  background-color: #eaf6fa;
   position: relative;
   z-index: 20;
+}
+
+.content.contact .contact-form {
+  margin: 2rem 1rem;
+  background-color: #eaf6fa;
   color: #767676;
   padding: 2rem 1rem;
 }
 
-.content.contact .contact-form-wrapper .medium {
+.content.contact .contact-form .medium {
   font-weight: 500;
 }
 
-.content.contact .contact-form-wrapper .title {
+.content.contact .contact-form .title {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.content.contact .contact-form-wrapper form {
+.content.contact .contact-form form {
   margin-top: 2rem;
 }
 
-.content.contact .contact-form-wrapper form input[type=text], .content.contact .contact-form-wrapper form textarea {
+.content.contact .contact-form form input[type=text], .content.contact .contact-form form textarea {
   width: 100%;
   margin-bottom: 2rem;
   border: 1px solid #cccccc;
@@ -359,19 +362,19 @@ header .logo {
   padding: 0px .5rem;
 }
 
-.content.contact .contact-form-wrapper form textarea {
+.content.contact .contact-form form textarea {
   padding: .5rem;
   height: auto;
   resize: none;
   font-family: inherit;
 }
 
-.content.contact .contact-form-wrapper form input[type=text]::placeholder,
-.content.contact .contact-form-wrapper form textarea::placeholder {
+.content.contact .contact-form form input[type=text]::placeholder,
+.content.contact .contact-form form textarea::placeholder {
   color: #ccc;
 }
 
-.content.contact .contact-form-wrapper form button {
+.content.contact .contact-form form button {
   color: white;
   font-size: 1rem;
   border-radius: 3px;
@@ -380,8 +383,39 @@ header .logo {
   border: none;
 }
 
-.content.contact .contact-form-wrapper form button:hover {
+.content.contact .contact-form form button:hover {
   text-decoration: underline;
+}
+
+
+@media screen and (min-width: 768px) {
+  .content.contact .google-map {
+    position: absolute;
+    height: calc(567px + 4rem);
+    margin-top: 2rem;
+  }
+
+  .content.contact .google-map iframe {
+    height: calc(567px + 4rem);
+  }
+  
+  .content.contact .contact-form {
+    max-width: 379px;
+    margin-left: auto; 
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .content.contact .contact-form-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(60px * 3 + 516px * 4);
+  }
+
+  .content.contact .contact-form {
+    margin-right: 2rem;
+  }
 }
 
 
@@ -396,5 +430,4 @@ footer {
   footer {
     margin: 3rem 0;
   }
-  
 }

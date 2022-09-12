@@ -1,5 +1,4 @@
 menu + responsive
 slider + responsive
-contact + responsive
 
 
