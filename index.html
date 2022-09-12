@@ -12,15 +12,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="accueil">
         <div class="logo">
             <img src="assets/img/logo.png" alt="Logo Web Agency">
             <div>WebAgency</div>
         </div>
 
+        
+        <div class="mobile-nav-button" id="mobile-nav-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+
         <nav>
+            <div><a href="#accueil">Accueil</a></div>
+            <div><a href="#services">Services</a></div>
+            <div><a href="#portfolio">Portfolio</a></div>
+            <div><a href="#contact">Contact</a></div>
 
         </nav>
     </header>
@@ -40,7 +51,7 @@
             <img src="assets/img/slider/slide-1-small.jpg" alt="">
         </section>
 
-        <section class="content services">
+        <section class="content services" id="services">
             <h2>Nos services</h2>
             <div class="separator">
                 <div class="separator-grey"></div>
@@ -82,7 +93,7 @@
 
         </section>
  
-        <section class="content projects">
+        <section class="content projects" id="portfolio">
 
             <h2>Nos projets</h2>
             <div class="separator">
@@ -187,7 +198,7 @@
 
         </section>
 
-        <section class="content contact">
+        <section class="content contact" id="contact">
             <div class="google-map">
                 <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=ap%20formation&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;}</style></div></div>
             </div>

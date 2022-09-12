@@ -1,4 +1,4 @@
-menu + responsive
 slider + responsive
+smooth scroll
 
 
