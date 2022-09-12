@@ -96,7 +96,7 @@
             </p>
 
             <ul class="projects-nav">
-                <li>Tous les travaux</li>
+                <li class="active">Tous les travaux</li>
                 <li>Créatives</li>
                 <li>Corporate</li>
                 <li>Portfolio</li>
@@ -145,7 +145,6 @@
                 </div>
                 <div class="project-item">
                     <img src="assets/img/projets/projet-5.jpg" alt="Projet 5">
-                        <div class="overlay"></div>
                         <div class="overlay">
                             <p class="title">Opti’Kids</p>
                             <p class="description">Site marchand de lunettes</p>
@@ -189,16 +188,22 @@
         </section>
 
         <section class="content contact">
-            <div class="google-map"></div>
+            <div class="google-map">
+                <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=ap%20formation&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;}</style></div></div>
+            </div>
             <div class="contact-form-wrapper">
-                <p class="title">Contact Info</p>
+                <p class="title medium">Contact Info</p>
                 <p class="contact-info">
-                    WebAgency SAS<br>
+                    <span class="medium">WebAgency SAS</span><br>
                     150 rue Nicolas Louis Vauquelin 31100 Toulouse<br>
                     Tél. : 05 34 61 26 23
                 </p>
                 <form action="" class="contact-form">
-    
+                    <input type="text" name="nom" id="nom" placeholder="Nom">
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                    <input type="text" name="sujet" id="sujet" placeholder="Sujet">
+                    <textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
+                    <button>Envoyer le message</button>
                 </form>
             </div>
             
